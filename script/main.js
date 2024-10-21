@@ -104,9 +104,34 @@ const animationTimeline = () => {
     .to(".fake-btn", 0.1, {
         backgroundColor: "rgb(127, 206, 248)",
     },
-    "+=4")
-    .to(
+    "+=4").to(
         ".four",
+        0.5, {
+            scale: 0.2,
+            opacity: 0,
+            y: -150
+        },
+    "+=1")
+    .from(".fourone", 0.7, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .from(".fake-btnone", 0.3, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .staggerTo(
+        ".hbd-chatboxone span",
+        1.5, {
+            visibility: "visible",
+        },
+        0.05
+    )
+    .to(".fake-btnone", 0.1, {
+        backgroundColor: "rgb(127, 206, 248)",
+    },
+    "+=4").to(
+        ".fourone",
         0.5, {
             scale: 0.2,
             opacity: 0,

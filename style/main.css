@@ -50,6 +50,15 @@ body {
   width: 600px;
 }
 
+.fourone .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+}
+
 .text-box p {
   margin: 0;
   text-align: left;
@@ -60,6 +69,16 @@ body {
 }
 
 .text-box .fake-btn {
+  background-color: rgb(21, 161, 237);
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+.text-box .fake-btnone {
   background-color: rgb(21, 161, 237);
   border-radius: 3px;
   bottom: -50px;
@@ -259,7 +278,16 @@ body {
     width: 90%;
   }
 
+  .fourone .text-box {
+    width: 90%;
+  }
+
   .text-box .fake-btn {
+    bottom: -38px;
+    right: 5px;
+  }
+
+  .text-box .fake-btnone {
     bottom: -38px;
     right: 5px;
   }
