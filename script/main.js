@@ -23,9 +23,34 @@ window.addEventListener('load', () => {
 const animationTimeline = () => {
     // split chars that needs to be animated individually
     const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
+    const textBoxCharsone = document.getElementsByClassName("hbd-chatboxone")[0];
+    const textBoxCharstwo = document.getElementsByClassName("hbd-chatboxtwo")[0];
+    const textBoxCharsthree = document.getElementsByClassName("hbd-chatboxthree")[0];
+    const textBoxCharsfour = document.getElementsByClassName("hbd-chatboxfour")[0];
+    const textBoxCharsfive = document.getElementsByClassName("hbd-chatboxfive")[0];
     const hbd = document.getElementsByClassName("wish-hbd")[0];
 
     textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
+        .split("")
+        .join("</span><span>")}</span>`;
+
+    textBoxCharsone.innerHTML = `<span>${textBoxCharsone.innerHTML
+        .split("")
+        .join("</span><span>")}</span>`;
+
+    textBoxCharstwo.innerHTML = `<span>${textBoxCharstwo.innerHTML
+        .split("")
+        .join("</span><span>")}</span>`;
+
+    textBoxCharsthree.innerHTML = `<span>${textBoxCharsthree.innerHTML
+        .split("")
+        .join("</span><span>")}</span>`;
+
+    textBoxCharsfour.innerHTML = `<span>${textBoxCharsfour.innerHTML
+        .split("")
+        .join("</span><span>")}</span>`;
+
+    textBoxCharsfive.innerHTML = `<span>${textBoxCharsfive.innerHTML
         .split("")
         .join("</span><span>")}</span>`;
 
@@ -132,6 +157,110 @@ const animationTimeline = () => {
     },
     "+=4").to(
         ".fourone",
+        0.5, {
+            scale: 0.2,
+            opacity: 0,
+            y: -150
+        },
+    "+=1")
+    .from(".fourtwo", 0.7, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .from(".fake-btntwo", 0.3, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .staggerTo(
+        ".hbd-chatboxtwo span",
+        1.5, {
+            visibility: "visible",
+        },
+        0.05
+    )
+    .to(".fake-btntwo", 0.1, {
+        backgroundColor: "rgb(127, 206, 248)",
+    },
+    "+=4").to(
+        ".fourtwo",
+        0.5, {
+            scale: 0.2,
+            opacity: 0,
+            y: -150
+        },
+    "+=1")
+    .from(".fourthree", 0.7, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .from(".fake-btnthree", 0.3, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .staggerTo(
+        ".hbd-chatboxthree span",
+        1.5, {
+            visibility: "visible",
+        },
+        0.05
+    )
+    .to(".fake-btnthree", 0.1, {
+        backgroundColor: "rgb(127, 206, 248)",
+    },
+    "+=4").to(
+        ".fourthree",
+        0.5, {
+            scale: 0.2,
+            opacity: 0,
+            y: -150
+        },
+    "+=1")
+    .from(".fourfour", 0.7, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .from(".fake-btnfour", 0.3, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .staggerTo(
+        ".hbd-chatboxfour span",
+        1.5, {
+            visibility: "visible",
+        },
+        0.05
+    )
+    .to(".fake-btnfour", 0.1, {
+        backgroundColor: "rgb(127, 206, 248)",
+    },
+    "+=4").to(
+        ".fourfour",
+        0.5, {
+            scale: 0.2,
+            opacity: 0,
+            y: -150
+        },
+    "+=1")
+    .from(".fourfive", 0.7, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .from(".fake-btnfive", 0.3, {
+        scale: 0.2,
+        opacity: 0,
+    })
+    .staggerTo(
+        ".hbd-chatboxfive span",
+        1.5, {
+            visibility: "visible",
+        },
+        0.05
+    )
+    .to(".fake-btnfive", 0.1, {
+        backgroundColor: "rgb(127, 206, 248)",
+    },
+    "+=4").to(
+        ".fourfive",
         0.5, {
             scale: 0.2,
             opacity: 0,

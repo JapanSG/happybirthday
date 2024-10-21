@@ -59,6 +59,43 @@ body {
   width: 600px;
 }
 
+.fourtwo .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+}
+
+.fourthree .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+}
+
+.fourfour .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+}
+
+.fourfive .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+}
+
+
 .text-box p {
   margin: 0;
   text-align: left;
@@ -79,6 +116,46 @@ body {
 }
 
 .text-box .fake-btnone {
+  background-color: rgb(21, 161, 237);
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+.text-box .fake-btntwo {
+  background-color: rgb(21, 161, 237);
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+.text-box .fake-btnthree {
+  background-color: rgb(21, 161, 237);
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+.text-box .fake-btnfour {
+  background-color: rgb(21, 161, 237);
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+.text-box .fake-btnfive {
   background-color: rgb(21, 161, 237);
   border-radius: 3px;
   bottom: -50px;
@@ -282,12 +359,48 @@ body {
     width: 90%;
   }
 
+  .fourtwo .text-box {
+    width: 90%;
+  }
+
+  .fourthree .text-box {
+    width: 90%;
+  }
+
+  .fourfour .text-box {
+    width: 90%;
+  }
+
+  .fourfive .text-box {
+    width: 90%;
+  }
+
   .text-box .fake-btn {
     bottom: -38px;
     right: 5px;
   }
 
   .text-box .fake-btnone {
+    bottom: -38px;
+    right: 5px;
+  }
+
+  .text-box .fake-btntwo {
+    bottom: -38px;
+    right: 5px;
+  }
+
+  .text-box .fake-btnthree {
+    bottom: -38px;
+    right: 5px;
+  }
+
+  .text-box .fake-btnfour {
+    bottom: -38px;
+    right: 5px;
+  }
+
+  .text-box .fake-btnfive {
     bottom: -38px;
     right: 5px;
   }
